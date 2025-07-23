@@ -113,8 +113,8 @@ fi
 
 echo ""
 echo "Step 8: Cloning SOC Tool from GitHub..."
-git clone https://github.com/skiptosecure/security-toolkits.git
-cd security-toolkits/ScanDrop
+git clone https://github.com/skiptosecure/Tools.git
+cd Tools/ScanDrop
 
 echo ""
 echo "Step 9: Generating SSL certificates..."
