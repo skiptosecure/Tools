@@ -7,3 +7,5 @@ analysis and incident response.
 Run python3 zeekapp.py sample.pcap to analyze a PCAP file, or python3 zeekdash.py /path/to/logs/ to generate 
 dashboards from existing Zeek logs. All files including raw logs and the HTML analysis report are saved in the 
 output directory for further investigation.
+
+Install script not yet tested.
