@@ -19,7 +19,7 @@ Clean up orphaned Docker resources that waste disk space.
 
 ```bash
 # Download and run
-curl -O https://raw.githubusercontent.com/skiptosecure/security-toolkits/main/ContainerCleanup/cleanup.sh
+curl -O https://raw.githubusercontent.com/skiptosecure/Tools/main/ContainerCleanup/cleanup.sh
 chmod +x cleanup.sh
 ./cleanup.sh
 ```
