@@ -363,7 +363,7 @@ def list_clean_files():
         
         html += """
                 <div class="nav-buttons">
-                    <a href="https://{request.host.split(':')[0]}:3000">🔍 Analyze Files</a>
+                    <a href="#" onclick="window.open('https://' + window.location.hostname + ':3000', '_blank')">🔍 Analyze Files</a>
                 </div>
                 
                 <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin-top: 30px;">
