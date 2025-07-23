@@ -108,19 +108,19 @@ pip install -r requirements.txt
 
 # Download application files
 print_status "Downloading application files from GitHub..."
-curl -sSL https://raw.githubusercontent.com/skiptosecure/security-toolkits/main/Trivy-Scanner/app.py -o app.py
-curl -sSL https://raw.githubusercontent.com/skiptosecure/security-toolkits/main/Trivy-Scanner/models.py -o models.py
-curl -sSL https://raw.githubusercontent.com/skiptosecure/security-toolkits/main/Trivy-Scanner/scanner.py -o scanner.py
+curl -sSL https://raw.githubusercontent.com/skiptosecure/Tools/main/Trivy-Scanner/app.py -o app.py
+curl -sSL https://raw.githubusercontent.com/skiptosecure/Tools/main/Trivy-Scanner/models.py -o models.py
+curl -sSL https://raw.githubusercontent.com/skiptosecure/Tools/main/Trivy-Scanner/scanner.py -o scanner.py
 
 # Create static directory and download HTML
 print_status "Creating static directory and downloading dashboard..."
 mkdir -p static
-curl -sSL https://raw.githubusercontent.com/skiptosecure/security-toolkits/main/Trivy-Scanner/dashboard.html -o static/dashboard.html
+curl -sSL https://raw.githubusercontent.com/skiptosecure/Tools/main/Trivy-Scanner/dashboard.html -o static/dashboard.html
 
 # Create setup directory and download database script
 print_status "Setting up database components..."
 mkdir -p setup
-curl -sSL https://raw.githubusercontent.com/skiptosecure/security-toolkits/main/Trivy-Scanner/setup/create_database.py -o setup/create_database.py
+curl -sSL https://raw.githubusercontent.com/skiptosecure/Tools/main/Trivy-Scanner/setup/create_database.py -o setup/create_database.py
 
 print_success "Application files downloaded successfully"
 
