@@ -338,7 +338,7 @@ def analyze_file():
             
             <div style="margin: 30px 0;">
                 <a href="/" style="background: #28a745; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px; margin: 5px;">← Analyze Another File</a>
-                <a href="http://{request.host.split(':')[0]}:8000/list" target="_blank" style="background: #6f42c1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px; margin: 5px;">View Clean Storage</a>
+                <a href="#" onclick="window.open('http://' + window.location.hostname + ':8000/list', '_blank')" style="background: #6f42c1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px; margin: 5px;">View Clean Storage</a>
             </div>
         </body>
         </html>
