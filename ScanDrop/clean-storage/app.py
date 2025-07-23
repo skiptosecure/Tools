@@ -363,7 +363,7 @@ def list_clean_files():
         
         html += """
                 <div class="nav-buttons">
-                    <a href="https://192.168.1.85:3000">🔍 Analyze Files</a>
+                    <a href="https://{request.host.split(':')[0]}:3000">🔍 Analyze Files</a>
                 </div>
                 
                 <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin-top: 30px;">
