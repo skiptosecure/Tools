@@ -180,7 +180,7 @@ app.get('/files', async (req, res) => {
         
         <div class="nav-buttons">
           <a href="/" class="analyze">← Analyze More Files</a>
-          <a href="http://192.168.1.85:8000/list" target="_blank" class="clean-storage">View Clean Storage</a>
+          <a href="http://${req.get('host').split(':')[0]}:8000/list" target="_blank" class="clean-storage">View Clean Storage</a>
         </div>
         
         <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin-top: 30px;">
