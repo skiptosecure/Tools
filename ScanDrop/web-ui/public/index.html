@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SOC File Downloader</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 { color: #2c3e50; text-align: center; margin-bottom: 10px; }
+        .branding {
+            text-align: center;
+            color: #7f8c8d;
+            font-style: italic;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+        input[type="url"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 12px 20px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover { background: #2980b9; }
+        .test-urls {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 4px;
+        }
+        .test-urls h3 { margin-top: 0; }
+        .test-urls a {
+            color: #007bff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .test-urls a:hover { text-decoration: underline; }
+        .security-notice {
+            background: #e8f6f3;
+            border-left: 4px solid #27ae60;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 4px;
+        }
+        .security-notice h4 {
+            color: #27ae60;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🛡️ SOC File Downloader</h1>
+        <div class="branding">By skip to secure</div>
+        
+        <form action="/api/analyze" method="POST">
+            <label for="url">Enter file URL to download:</label><br>
+            <input type="url" name="url" id="url" placeholder="https://httpbin.org/json" required><br>
+            <button type="submit">Download & Analyze File</button>
+        </form>
+       
+        <div class="test-urls">
+            <h3>Test URLs (click to use):</h3>
+            <p><a onclick="document.getElementById('url').value='https://httpbin.org/json'">https://httpbin.org/json</a></p>
+            <p><a onclick="document.getElementById('url').value='https://www.google.com/favicon.ico'">https://www.google.com/favicon.ico</a></p>
+            <p><a onclick="document.getElementById('url').value='https://example.com/'">https://example.com/</a></p>
+        </div>
+        
+        <div class="security-notice">
+            <h4>🔒 Security Features</h4>
+            <p><strong>VirusTotal Integration:</strong> All files scanned by 70+ antivirus engines</p>
+            <p><strong>Immediate Deletion:</strong> Malicious files deleted instantly</p>
+            <p><strong>Clean Storage:</strong> Verified safe files stored securely</p>
+            <p><strong>Single File Policy:</strong> No file accumulation or cross-contamination</p>
+        </div>
+    </div>
+</body>
+</html>

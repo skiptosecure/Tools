@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  web-ui:
+    build: ./web-ui
+    ports:
+      - "3000:3000"
+    environment:
+      - ANALYZER_API_URL=http://file-analyzer:5000
+    depends_on:
+      - file-analyzer
+
+  file-analyzer:
+    build: ./file-analyzer
+    ports:
+      - "5000:5000"
+    environment:
+      - VIRUSTOTAL_API_KEY=${VIRUSTOTAL_API_KEY}
+      - CLEAN_STORAGE_URL=http://clean-storage:8000
+    depends_on:
+      - clean-storage
+
+  clean-storage:
+    build: ./clean-storage
+    ports:
+      - "8000:8000"
+
+volumes:
+  uploads:
+  clean-files:
+  logs:
