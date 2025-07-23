@@ -387,7 +387,7 @@ def list_clean_files():
         <body style="font-family: Arial; max-width: 600px; margin: 50px auto; padding: 20px;">
             <h2 style="color: red;">❌ Error Loading Clean Storage</h2>
             <p><strong>Error:</strong> {str(e)}</p>
-            <a href="https://{request.host.split(':')[0]}:3000" style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 4px;">← Back to Analyzer</a>
+            <a href="#" onclick="window.open('https://' + window.location.hostname + ':3000', '_blank')" style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 4px;">← Back to Analyzer</a>
         </body>
         </html>
         """, 500
